@@ -1,0 +1,76 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.contact-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.icon-link:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+.citation {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 10px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .icon-link {
+        font-size: 20px;
+    }
+}

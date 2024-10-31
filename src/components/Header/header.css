@@ -1,0 +1,144 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  max-height: 80px;
+}
+
+.nav__logo {
+  color: black;
+  text-decoration: none;
+  margin-left: 3rem;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 1.5rem;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: var(--font-medium);
+  transition: .3s;
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(80, 80, 76);
+  border-radius: 15px;
+}
+
+
+.nav__toggle {
+  display: none;
+}
+
+
+.nav__link:hover,
+.nav__link:focus {
+  transform: scale(1.15);
+}
+
+.active-link {
+  background-color: #eeebeb;
+  color: #000000;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.nav__menu {
+  margin-right: 10rem;
+  margin-top: 1.25rem;
+}
+
+.nav__item {
+  list-style-type: none;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+/* General and medium screen styles */
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 70px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+  }
+
+  .nav__menu {
+    width: 100%;
+    background-color: white;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 15;
+    display: none;
+    border: 1px solid #646464;
+    border-radius: 15px;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .nav__logo {
+    font-size: 24px;
+  }
+
+  .menuactive {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav__list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav__item {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav__toggle {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    z-index: 16;
+  }
+
+  .nav__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+}

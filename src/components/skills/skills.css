@@ -1,0 +1,86 @@
+.skills-section {
+  padding-top: 70px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 70px;
+}
+
+.section-title {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  display: block;
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skills-category {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.skill-card {
+  display: flex;
+  column-gap: 0.5rem;
+  padding-left: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.skill-card h3 {
+  color: #333;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.skill-card p {
+  color: #666;
+  font-size: 12px;
+}
+
+.badge {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 0.3rem;
+}
+
+.skill-card div {
+  text-align: left;
+}
+
+.skill-level {
+  padding: 0px;
+  margin: 0.2rem;
+}
