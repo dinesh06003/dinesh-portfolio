@@ -41,8 +41,8 @@ const Connect = () => {
             id: 2,
             logo: <IoLogoWhatsapp />,
             title: "Whatsapp",
-            context: "+1 112-233-4455",
-            link: "https://api.whatsapp.com/send?phone=+15736124299&text=Hello Dinesh, How are you?"
+            context: "+1 341-220-8188",
+            link: "https://api.whatsapp.com/send?phone=+13142208188&text=Hello Dinesh, How are you?"
         }
     ]
     return (
